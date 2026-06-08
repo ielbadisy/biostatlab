@@ -5,7 +5,7 @@
 \alias{load_dataset}
 \title{Dataset registry helpers}
 \description{
-Helpers for discovering and loading datasets included in biostatlabdata.
+Helpers for discovering and loading datasets included in biostatlab.
 }
 \usage{
 dataset_registry()

@@ -1,4 +1,4 @@
 library(testthat)
-library(biostatlabdata)
+library(biostatlab)
 
-test_check("biostatlabdata")
+test_check("biostatlab")
