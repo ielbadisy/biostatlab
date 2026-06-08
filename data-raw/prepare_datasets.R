@@ -28,26 +28,30 @@ entries <- list(
   ),
   entry(
     "breast", "breast.csv", "Breast cancer survival data",
-    "survival", "status", "time", "status",
+    "survival", "status",
     "Schumacher et al. (1994), German Breast Cancer Study Group; distributed in survival modelling examples.",
+    time = "time", event = "status",
     notes = "Time-to-event breast cancer endpoint with hormone and tumour covariates."
   ),
   entry(
     "colon_cancer", "colon.csv", "Colon cancer recurrence and death data",
-    "survival", "status", "time", "status",
+    "survival", "status",
     "Moertel et al. (1990), levamisole and fluorouracil adjuvant therapy trial; distributed with the R survival package.",
+    time = "time", event = "status",
     notes = "Colon cancer clinical trial survival benchmark."
   ),
   entry(
     "crc_mondaca2020", "crc_df_Mondaca,2020.csv", "Colorectal cancer genomic cohort",
-    "survival", "status", "time", "status",
+    "survival", "status",
     "Mondaca et al. (2020), colorectal cancer cohort manuscript included with the raw-selected-datasets sources.",
+    time = "time", event = "status",
     notes = "Clinical and genomic variables with survival status."
   ),
   entry(
     "crc_fes", "crc_fes/CRC.csv", "Colorectal cancer cohort from Fez",
-    "survival", "event", "time", "event",
+    "survival", "event",
     "Scientific Reports article 51304 (2024), PDF included with the raw-selected-datasets sources.",
+    time = "time", event = "event",
     notes = "Clinical colorectal cancer variables including delay and survival outcome."
   ),
   entry(
@@ -64,8 +68,9 @@ entries <- list(
   ),
   entry(
     "framingham", "framingham.csv", "Framingham heart study survival extract",
-    "survival", "status", "time", "status",
+    "survival", "status",
     "Dawber (1980), The Framingham Study; common survival-analysis benchmark extract.",
+    time = "time", event = "status",
     notes = "Cardiovascular follow-up variables with event time and cause fields."
   ),
   entry(
@@ -78,8 +83,9 @@ entries <- list(
   ),
   entry(
     "heart_failure", "heart_failure_clinical_records_dataset.csv",
-    "Heart failure clinical records", "survival", "DEATH_EVENT", "time", "DEATH_EVENT",
+    "Heart failure clinical records", "survival", "DEATH_EVENT",
     "Chicco and Jurman (2020), BMC Medical Informatics and Decision Making, heart failure clinical records dataset.",
+    time = "time", event = "DEATH_EVENT",
     notes = "Clinical heart failure variables with follow-up time and death event."
   ),
   entry(
@@ -96,14 +102,16 @@ entries <- list(
   ),
   entry(
     "metabric", "metabric/metabric.csv", "METABRIC breast cancer cohort",
-    "survival", "overall_survival", "overall_survival_months", "overall_survival",
+    "survival", "overall_survival",
     "Curtis et al. (2012), Nature; Pereira et al. (2016), Nature Communications METABRIC molecular taxonomy resources.",
+    time = "overall_survival_months", event = "overall_survival",
     notes = "Breast cancer clinical, expression, mutation, and survival variables."
   ),
   entry(
     "pbc", "pbc.csv", "Primary biliary cholangitis trial data",
-    "survival", "status", "time", "status",
+    "survival", "status",
     "Fleming and Harrington (1991), Counting Processes and Survival Analysis; distributed with the R survival package.",
+    time = "time", event = "status",
     notes = "Mayo Clinic primary biliary cholangitis trial survival data."
   ),
   entry(
@@ -152,7 +160,20 @@ registry <- data.frame(
   name = vapply(entries, `[[`, character(1), "name"),
   title = vapply(entries, `[[`, character(1), "title"),
   task = vapply(entries, `[[`, character(1), "task"),
-  target = vapply(entries, `[[`, character(1), "target"),
+  target = mapply(
+    function(task, target, time, event) {
+      if (identical(task, "survival")) {
+        paste(stats::na.omit(c(time, event)), collapse = ", ")
+      } else {
+        target
+      }
+    },
+    vapply(entries, `[[`, character(1), "task"),
+    vapply(entries, `[[`, character(1), "target"),
+    vapply(entries, `[[`, character(1), "time"),
+    vapply(entries, `[[`, character(1), "event"),
+    USE.NAMES = FALSE
+  ),
   time = vapply(entries, `[[`, character(1), "time"),
   event = vapply(entries, `[[`, character(1), "event"),
   source_path = vapply(entries, function(x) sub(paste0("^", root, "/?"), "raw-selected-datasets/", x$file), character(1)),
@@ -199,7 +220,7 @@ for (x in entries) {
            registry$n_columns[registry$name == x$name][1], " columns."),
     "}",
     "\\details{",
-    paste0("Target column: \\code{", escape_rd(x$target), "}."),
+    paste0("Outcome column(s): \\code{", escape_rd(registry$target[registry$name == x$name][1]), "}."),
     if (!is.na(x$time)) paste0(" Time column: \\code{", escape_rd(x$time), "}.") else "",
     if (!is.na(x$event)) paste0(" Event column: \\code{", escape_rd(x$event), "}.") else "",
     "}",

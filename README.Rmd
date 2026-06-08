@@ -1,5 +1,7 @@
 ---
-output: github_document
+output:
+  github_document:
+    md_extensions: -smart
 ---
 
 ```{r, include = FALSE}
@@ -33,10 +35,33 @@ columns, and references when available.
 ```{r available-datasets, echo = FALSE}
 load("data/biostatlab_registry.rda")
 
-readme_registry <- biostatlab_registry[, c("name", "task", "target", "title")]
-names(readme_registry) <- c("Dataset", "Task", "Target", "Title")
-readme_registry$Dataset <- paste0("`", readme_registry$Dataset, "`")
-readme_registry$Target <- paste0("`", readme_registry$Target, "`")
+outcome_columns <- Map(
+  function(task, target, time, event) {
+    if (identical(task, "survival")) {
+      unique(stats::na.omit(c(time, event)))
+    } else {
+      target
+    }
+  },
+  biostatlab_registry$task,
+  biostatlab_registry$target,
+  biostatlab_registry$time,
+  biostatlab_registry$event
+)
+
+readme_registry <- data.frame(
+  Dataset = paste0("`", biostatlab_registry$name, "`"),
+  Task = biostatlab_registry$task,
+  Outcome = ifelse(
+    biostatlab_registry$task == "survival",
+    paste0("`Surv(", biostatlab_registry$time, ", ", biostatlab_registry$event, ")`"),
+    paste0("`", biostatlab_registry$target, "`")
+  ),
+  Predictors = paste0(biostatlab_registry$n_columns - lengths(outcome_columns), " columns"),
+  Source = biostatlab_registry$reference,
+  Title = biostatlab_registry$title,
+  check.names = FALSE
+)
 
 knitr::kable(readme_registry)
 ```

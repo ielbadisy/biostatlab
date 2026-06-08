@@ -12,7 +12,7 @@ data(diabetes_prediction)
 A data frame with 100000 rows and 9 columns.
 }
 \details{
-Target column: \code{diabetes}.
+Outcome column(s): \code{diabetes}.
 
 
 }

@@ -12,7 +12,7 @@ data(haberman)
 A data frame with 306 rows and 4 columns.
 }
 \details{
-Target column: \code{survival_status}.
+Outcome column(s): \code{survival_status}.
 
 
 }

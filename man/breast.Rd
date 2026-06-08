@@ -12,11 +12,11 @@ data(breast)
 A data frame with 672 rows and 10 columns.
 }
 \details{
-Target column: \code{status}.
- Time column: \code{status}.
- Event column: \code{Schumacher et al. (1994), German Breast Cancer Study Group; distributed in survival modelling examples.}.
+Outcome column(s): \code{time, status}.
+ Time column: \code{time}.
+ Event column: \code{status}.
 }
 \source{
-\code{raw-selected-datasets/breast.csv}. time
+\code{raw-selected-datasets/breast.csv}. Schumacher et al. (1994), German Breast Cancer Study Group; distributed in survival modelling examples.
 }
 \keyword{datasets}

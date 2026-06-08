@@ -12,7 +12,7 @@ data(maternal_bangladesh)
 A data frame with 1205 rows and 12 columns.
 }
 \details{
-Target column: \code{Risk Level}.
+Outcome column(s): \code{Risk Level}.
 
 
 }

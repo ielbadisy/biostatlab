@@ -12,7 +12,7 @@ data(high_risk_pregnancy)
 A data frame with 1205 rows and 13 columns.
 }
 \details{
-Target column: \code{Risk Level}.
+Outcome column(s): \code{Risk Level}.
 
 
 }

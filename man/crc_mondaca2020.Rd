@@ -12,11 +12,11 @@ data(crc_mondaca2020)
 A data frame with 471 rows and 19 columns.
 }
 \details{
-Target column: \code{status}.
- Time column: \code{status}.
- Event column: \code{Mondaca et al. (2020), colorectal cancer cohort manuscript included with the raw-selected-datasets sources.}.
+Outcome column(s): \code{time, status}.
+ Time column: \code{time}.
+ Event column: \code{status}.
 }
 \source{
-\code{raw-selected-datasets/crc_df_Mondaca,2020.csv}. time
+\code{raw-selected-datasets/crc_df_Mondaca,2020.csv}. Mondaca et al. (2020), colorectal cancer cohort manuscript included with the raw-selected-datasets sources.
 }
 \keyword{datasets}

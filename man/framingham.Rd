@@ -12,11 +12,11 @@ data(framingham)
 A data frame with 5209 rows and 18 columns.
 }
 \details{
-Target column: \code{status}.
- Time column: \code{status}.
- Event column: \code{Dawber (1980), The Framingham Study; common survival-analysis benchmark extract.}.
+Outcome column(s): \code{time, status}.
+ Time column: \code{time}.
+ Event column: \code{status}.
 }
 \source{
-\code{raw-selected-datasets/framingham.csv}. time
+\code{raw-selected-datasets/framingham.csv}. Dawber (1980), The Framingham Study; common survival-analysis benchmark extract.
 }
 \keyword{datasets}

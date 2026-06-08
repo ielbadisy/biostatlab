@@ -12,7 +12,7 @@ data(arthritis)
 A data frame with 4856 rows and 12 columns.
 }
 \details{
-Target column: \code{status}.
+Outcome column(s): \code{status}.
 
 
 }

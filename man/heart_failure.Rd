@@ -12,11 +12,11 @@ data(heart_failure)
 A data frame with 299 rows and 13 columns.
 }
 \details{
-Target column: \code{DEATH_EVENT}.
- Time column: \code{DEATH_EVENT}.
- Event column: \code{Chicco and Jurman (2020), BMC Medical Informatics and Decision Making, heart failure clinical records dataset.}.
+Outcome column(s): \code{time, DEATH_EVENT}.
+ Time column: \code{time}.
+ Event column: \code{DEATH_EVENT}.
 }
 \source{
-\code{raw-selected-datasets/heart_failure_clinical_records_dataset.csv}. time
+\code{raw-selected-datasets/heart_failure_clinical_records_dataset.csv}. Chicco and Jurman (2020), BMC Medical Informatics and Decision Making, heart failure clinical records dataset.
 }
 \keyword{datasets}
