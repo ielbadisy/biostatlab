@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# biostatlab
+
+`biostatlab` is an R data package for biostatistics labs and modelling
+benchmarks. It stores curated datasets as package data and exposes a registry
+that groups tasks into survival, classification, and regression workflows.
+
+## Usage
+
+```r
+library(biostatlab)
+
+dataset_registry()
+datasets_by_task("survival")
+heart_failure <- load_dataset("heart_failure")
+```
+
+Each dataset has a documentation page with dimensions, task type, target
+columns, and references when available.
+
+## Available Datasets
+
+```{r available-datasets, echo = FALSE}
+load("data/biostatlab_registry.rda")
+
+readme_registry <- biostatlab_registry[, c("name", "task", "target", "title")]
+names(readme_registry) <- c("Dataset", "Task", "Target", "Title")
+readme_registry$Dataset <- paste0("`", readme_registry$Dataset, "`")
+readme_registry$Target <- paste0("`", readme_registry$Target, "`")
+
+knitr::kable(readme_registry)
+```
