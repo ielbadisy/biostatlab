@@ -12,7 +12,7 @@ data(tobacco_age_first_cigarette)
 A data frame with 3915 rows and 27 columns.
 }
 \details{
-Target column: \code{age_first_cig}.
+Outcome column(s): \code{age_first_cig}.
 
 
 }

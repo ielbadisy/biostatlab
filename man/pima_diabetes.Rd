@@ -12,7 +12,7 @@ data(pima_diabetes)
 A data frame with 532 rows and 9 columns.
 }
 \details{
-Target column: \code{diabetes}.
+Outcome column(s): \code{diabetes}.
 
 
 }

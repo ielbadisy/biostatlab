@@ -12,7 +12,7 @@ data(kickstarter)
 A data frame with 4175 rows and 56 columns.
 }
 \details{
-Target column: \code{pledged}.
+Outcome column(s): \code{pledged}.
 
 
 }

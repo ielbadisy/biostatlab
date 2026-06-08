@@ -12,7 +12,7 @@ data(tobacco_morocco)
 A data frame with 3915 rows and 27 columns.
 }
 \details{
-Target column: \code{cigar_use}.
+Outcome column(s): \code{cigar_use}.
 
 
 }

@@ -12,7 +12,7 @@ data(crc_fes_delay)
 A data frame with 346 rows and 19 columns.
 }
 \details{
-Target column: \code{Delay}.
+Outcome column(s): \code{Delay}.
 
 
 }
