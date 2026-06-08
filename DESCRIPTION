@@ -1,0 +1,23 @@
+Package: biostatlabdata
+Title: Curated Datasets for Biostatistics Labs and Benchmarks
+Version: 0.0.1
+Authors@R:
+    person(given = "Biostat", family = "Lab", role = c("aut", "cre"),
+           email = "maintainer@example.com")
+Author: Biostat Lab
+Maintainer: Biostat Lab <maintainer@example.com>
+Description: Hosts documented datasets for biostatistics teaching labs and
+    modelling benchmarks. The package includes a task registry so users can
+    discover datasets suitable for regression, classification, and survival
+    analysis workflows.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1)
+LazyData: true
+LazyDataCompression: xz
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

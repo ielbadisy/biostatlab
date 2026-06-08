@@ -1,0 +1,7 @@
+^\\.git$
+^\\.gitignore$
+^data-raw$
+^raw-selected-datasets$
+^biostatlabdata\\.Rcheck$
+^\\.\\.Rcheck$
+^AGENTS\\.md$
