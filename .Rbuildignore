@@ -2,6 +2,7 @@
 ^\\.gitignore$
 ^data-raw$
 ^raw-selected-datasets$
-^biostatlabdata\\.Rcheck$
+^biostatlab\\.Rcheck$
+^biostatlab_.*\\.tar\\.gz$
 ^\\.\\.Rcheck$
 ^AGENTS\\.md$

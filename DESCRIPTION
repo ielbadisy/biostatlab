@@ -1,4 +1,4 @@
-Package: biostatlabdata
+Package: biostatlab
 Title: Curated Datasets for Biostatistics Labs and Benchmarks
 Version: 0.0.1
 Authors@R:

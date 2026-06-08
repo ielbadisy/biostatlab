@@ -1,4 +1,4 @@
-#' Return the biostatlabdata dataset registry
+#' Return the biostatlab dataset registry
 #'
 #' @return A data frame with one row per packaged dataset.
 #' @export
@@ -42,6 +42,6 @@ load_dataset <- function(name, envir = parent.frame()) {
     stop("Unknown dataset `", name, "`. Use available_datasets() to list names.", call. = FALSE)
   }
 
-  data(list = name, package = "biostatlabdata", envir = envir)
+  data(list = name, package = "biostatlab", envir = envir)
   get(name, envir = envir, inherits = FALSE)
 }

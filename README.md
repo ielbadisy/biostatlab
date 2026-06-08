@@ -1,13 +1,13 @@
-# biostatlabdata
+# biostatlab
 
-`biostatlabdata` is an R data package for biostatistics labs and modelling
+`biostatlab` is an R data package for biostatistics labs and modelling
 benchmarks. It stores curated datasets as package data and exposes a registry
 that groups tasks into survival, classification, and regression workflows.
 
 ## Usage
 
 ```r
-library(biostatlabdata)
+library(biostatlab)
 
 dataset_registry()
 datasets_by_task("survival")
