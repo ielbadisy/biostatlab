@@ -1,5 +1,5 @@
 root <- normalizePath(file.path("raw-selected-datasets"), mustWork = FALSE)
-clinical_root <- normalizePath(file.path("data-raw", "clinical-trial-data"), mustWork = TRUE)
+clinical_root <- normalizePath(file.path("data-raw", "clinical-trial-data"), mustWork = FALSE)
 
 entry <- function(name, file, title, task, target, reference,
                   time = NA_character_, event = NA_character_,
@@ -26,8 +26,17 @@ clinical_entry <- function(name, file, title, task, target, reference,
   entry(
     name, file, title, task, target, reference, notes = notes,
     reader = function(x) {
+      clinical_file <- file.path(clinical_root, x$file)
+      if (!file.exists(clinical_file)) {
+        rda <- file.path("data", paste0(x$name, ".rda"))
+        if (file.exists(rda)) {
+          e <- new.env(parent = emptyenv())
+          load(rda, envir = e)
+          return(get(x$name, envir = e, inherits = FALSE))
+        }
+      }
       read.csv(
-        file.path(clinical_root, x$file),
+        clinical_file,
         check.names = FALSE,
         stringsAsFactors = FALSE
       )
@@ -46,6 +55,62 @@ package_entry <- function(name, package, object, title, task, target, reference,
       as.data.frame(get(object, envir = e, inherits = FALSE))
     }
   )
+}
+
+simulated_cardio <- function(seed = 20260612L, n = 180L) {
+  set.seed(seed)
+
+  cardio <- data.frame(
+    id = seq_len(n),
+    sex = sample(c("Female", "Male"), n, replace = TRUE),
+    treatment = sample(c("Control", "DrugA", "DrugB"), n, replace = TRUE),
+    smoker = sample(c("No", "Yes"), n, replace = TRUE, prob = c(0.65, 0.35)),
+    diabetes = sample(c("No", "Yes"), n, replace = TRUE, prob = c(0.75, 0.25)),
+    age = round(rnorm(n, mean = 55, sd = 10), 1),
+    stringsAsFactors = FALSE
+  )
+
+  cardio$sbp_baseline <- round(rnorm(n, mean = 145, sd = 15), 1)
+  cardio$treatment_effect <- ifelse(
+    cardio$treatment == "Control", 2,
+    ifelse(cardio$treatment == "DrugA", -7, -12)
+  )
+  cardio$sbp_3m <- round(
+    cardio$sbp_baseline + cardio$treatment_effect + rnorm(n, mean = 0, sd = 10),
+    1
+  )
+  cardio$sbp_6m <- round(cardio$sbp_3m + rnorm(n, mean = -2, sd = 8), 1)
+  cardio$ldl <- round(
+    rnorm(n, mean = 130, sd = 30) + ifelse(cardio$diabetes == "Yes", 12, 0),
+    1
+  )
+  cardio$crp <- round(rlnorm(n, meanlog = 1.5, sdlog = 0.6), 2)
+  cardio$adherence <- sample(
+    c("Low", "Moderate", "High"),
+    n,
+    replace = TRUE,
+    prob = c(0.25, 0.45, 0.30)
+  )
+  cardio$response <- ifelse(cardio$sbp_3m < 140, "Controlled", "Uncontrolled")
+  cardio$controlled_baseline <- ifelse(
+    cardio$sbp_baseline < 140,
+    "Controlled",
+    "Uncontrolled"
+  )
+  cardio$controlled_3m <- ifelse(cardio$sbp_3m < 140, "Controlled", "Uncontrolled")
+  cardio$controlled_6m <- ifelse(cardio$sbp_6m < 140, "Controlled", "Uncontrolled")
+
+  cardio$sex <- factor(cardio$sex)
+  cardio$treatment <- factor(cardio$treatment)
+  cardio$smoker <- factor(cardio$smoker)
+  cardio$diabetes <- factor(cardio$diabetes)
+  cardio$adherence <- factor(cardio$adherence, levels = c("Low", "Moderate", "High"))
+  cardio$response <- factor(cardio$response)
+  cardio$controlled_baseline <- factor(cardio$controlled_baseline)
+  cardio$controlled_3m <- factor(cardio$controlled_3m)
+  cardio$controlled_6m <- factor(cardio$controlled_6m)
+
+  cardio
 }
 
 entries <- list(
@@ -196,6 +261,13 @@ entries <- list(
     "regression", "seizure.rate",
     "Thall and Vail (1990), Biometrics 46:657-671; redistributed as HSAUR2::epilepsy.",
     notes = "Longitudinal randomized epilepsy trial with seizure counts by treatment period."
+  ),
+  entry(
+    "cardio", "simulated/cardio", "Simulated cardiovascular teaching dataset",
+    "classification", "response",
+    "Simulated by the biostatlab package for teaching purposes; generated in data-raw/prepare_datasets.R with seed 20260612.",
+    notes = "Simulated cardiovascular clinical teaching dataset with blood pressure, LDL, CRP, adherence, and controlled-status outcomes.",
+    reader = function(x) simulated_cardio()
   )
 )
 
