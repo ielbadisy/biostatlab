@@ -106,3 +106,37 @@ utils::globalVariables("biostatlab_registry")
 #'   longitudinal count data with overdispersion", *Biometrics*, 46, 657-671.
 #'   Repackaged from `HSAUR2::epilepsy`.
 "epilepsy"
+
+#' Simulated Cardiovascular Teaching Dataset
+#'
+#' A simulated clinical dataset for teaching cardiovascular data analysis. The
+#' records include demographic variables, treatment assignment, smoking and
+#' diabetes indicators, repeated systolic blood pressure measurements,
+#' biomarkers, adherence, and derived blood-pressure control outcomes.
+#'
+#' This dataset is simulated for teaching purposes. It should not be interpreted
+#' as real patient data or used for clinical inference.
+#'
+#' @format A data frame with 180 rows and 17 variables:
+#' \describe{
+#'   \item{id}{Simulated participant identifier.}
+#'   \item{sex}{Simulated sex.}
+#'   \item{treatment}{Simulated treatment group: `Control`, `DrugA`, or `DrugB`.}
+#'   \item{smoker}{Simulated smoking indicator.}
+#'   \item{diabetes}{Simulated diabetes indicator.}
+#'   \item{age}{Simulated age in years.}
+#'   \item{sbp_baseline}{Simulated baseline systolic blood pressure.}
+#'   \item{treatment_effect}{Simulated treatment effect applied to follow-up SBP.}
+#'   \item{sbp_3m}{Simulated systolic blood pressure at 3 months.}
+#'   \item{sbp_6m}{Simulated systolic blood pressure at 6 months.}
+#'   \item{ldl}{Simulated LDL cholesterol.}
+#'   \item{crp}{Simulated C-reactive protein.}
+#'   \item{adherence}{Simulated adherence category.}
+#'   \item{response}{Derived 3-month control response.}
+#'   \item{controlled_baseline}{Derived baseline control status.}
+#'   \item{controlled_3m}{Derived 3-month control status.}
+#'   \item{controlled_6m}{Derived 6-month control status.}
+#' }
+#' @source Simulated by the biostatlab package for teaching purposes; generated
+#'   in `data-raw/prepare_datasets.R` with seed 20260612.
+"cardio"
