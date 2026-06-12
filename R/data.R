@@ -8,3 +8,103 @@
 "biostatlab_registry"
 
 utils::globalVariables("biostatlab_registry")
+
+#' Diastolic Blood Pressure Trial
+#'
+#' A reconstructed hypertension clinical trial dataset with treatment assignment,
+#' baseline diastolic blood pressure, monthly follow-up measurements through four
+#' months, age, and sex.
+#'
+#' @format A data frame with 40 rows and 9 variables:
+#' \describe{
+#'   \item{Subject}{Participant identifier.}
+#'   \item{TRT}{Randomized treatment group: new drug `A` or placebo `B`.}
+#'   \item{DBP1}{Baseline supine diastolic blood pressure in mm Hg.}
+#'   \item{DBP2}{Month 1 supine diastolic blood pressure in mm Hg.}
+#'   \item{DBP3}{Month 2 supine diastolic blood pressure in mm Hg.}
+#'   \item{DBP4}{Month 3 supine diastolic blood pressure in mm Hg.}
+#'   \item{DBP5}{Month 4 supine diastolic blood pressure in mm Hg.}
+#'   \item{Age}{Baseline age.}
+#'   \item{Sex}{Recorded sex.}
+#' }
+#' @source Peace and Chen (2010), *Clinical Trial Data Analysis Using R*, Table
+#'   3.1. Reconstructed source files:
+#'   `data-raw/clinical-trial-data/diastolic_blood_pressure_trial.csv` and
+#'   `data-raw/clinical-trial-data/dpb-dict.md`.
+"dpb"
+
+#' Duodenal Ulcer Healing Trial
+#'
+#' A reconstructed subject-level cimetidine dose comparison trial for duodenal
+#' ulcer healing, with treatment group, dose, healing indicators at weeks 1, 2,
+#' and 4, and derived healing time.
+#'
+#' @format A data frame with 703 rows and 7 variables:
+#' \describe{
+#'   \item{Subject}{Participant identifier.}
+#'   \item{TRT}{Treatment group.}
+#'   \item{Dose_mg}{Cimetidine dose in milligrams.}
+#'   \item{Healed_Week1}{Indicator for healing by week 1.}
+#'   \item{Healed_Week2}{Indicator for healing by week 2.}
+#'   \item{Healed_Week4}{Indicator for healing by week 4.}
+#'   \item{Healing_Time}{First observed healing time category.}
+#' }
+#' @source Peace and Chen (2010), *Clinical Trial Data Analysis Using R*, Table
+#'   3.2. Reconstructed source files:
+#'   `data-raw/clinical-trial-data/duodenal_ulcer_trial_raw_reconstructed.csv`
+#'   and `data-raw/clinical-trial-data/duodenal-dict.md`.
+"duodenal"
+
+#' Streptomycin Tuberculosis Trial
+#'
+#' Randomized placebo-controlled trial of streptomycin therapy for pulmonary
+#' tuberculosis, including treatment arm, baseline clinical findings, six-month
+#' radiologic response, and a binary improvement outcome.
+#'
+#' @format A data frame with 107 rows and 13 variables, including treatment arm,
+#'   streptomycin dose, sex, baseline clinical status, baseline cavitation,
+#'   streptomycin resistance, radiologic response at six months, and
+#'   `improved`.
+#' @source Streptomycin in Tuberculosis Trials Committee (1948), *British
+#'   Medical Journal*. Repackaged from `medicaldata::strep_tb`.
+"streptb"
+
+#' Respiratory Illness Trial
+#'
+#' Long-form repeated-measures data from a randomized multicenter respiratory
+#' illness trial comparing active treatment with placebo.
+#'
+#' @format A data frame with 555 rows and 7 variables:
+#' \describe{
+#'   \item{centre}{Study center.}
+#'   \item{treatment}{Treatment arm.}
+#'   \item{gender}{Patient gender.}
+#'   \item{age}{Patient age.}
+#'   \item{status}{Respiratory status, the response variable.}
+#'   \item{month}{Visit month.}
+#'   \item{subject}{Patient identifier.}
+#' }
+#' @source Davis, C. S. (1991), "Semi-parametric and non-parametric methods for
+#'   the analysis of repeated measurements with applications to clinical
+#'   trials", *Statistics in Medicine*, 10, 1959-1980. Repackaged from
+#'   `HSAUR3::respiratory`.
+"respiratory"
+
+#' Epilepsy Progabide Trial
+#'
+#' Longitudinal randomized clinical trial data for the anti-epileptic drug
+#' Progabide, with seizure counts recorded across four treatment periods.
+#'
+#' @format A data frame with 236 rows and 6 variables:
+#' \describe{
+#'   \item{treatment}{Treatment group.}
+#'   \item{base}{Baseline seizure count before the trial.}
+#'   \item{age}{Patient age.}
+#'   \item{seizure.rate}{Number of seizures in the treatment period.}
+#'   \item{period}{Treatment period.}
+#'   \item{subject}{Patient identifier.}
+#' }
+#' @source Thall, P. F. and Vail, S. C. (1990), "Some covariance models for
+#'   longitudinal count data with overdispersion", *Biometrics*, 46, 657-671.
+#'   Repackaged from `HSAUR2::epilepsy`.
+"epilepsy"

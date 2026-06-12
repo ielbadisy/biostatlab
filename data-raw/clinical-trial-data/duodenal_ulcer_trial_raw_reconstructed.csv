@@ -1,0 +1,704 @@
+Subject,TRT,Dose_mg,Healed_Week1,Healed_Week2,Healed_Week4,Healing_Time
+1,Placebo,0,1,1,1,Week1
+2,Placebo,0,1,1,1,Week1
+3,Placebo,0,1,1,1,Week1
+4,Placebo,0,1,1,1,Week1
+5,Placebo,0,1,1,1,Week1
+6,Placebo,0,1,1,1,Week1
+7,Placebo,0,1,1,1,Week1
+8,Placebo,0,1,1,1,Week1
+9,Placebo,0,1,1,1,Week1
+10,Placebo,0,1,1,1,Week1
+11,Placebo,0,1,1,1,Week1
+12,Placebo,0,1,1,1,Week1
+13,Placebo,0,1,1,1,Week1
+14,Placebo,0,1,1,1,Week1
+15,Placebo,0,1,1,1,Week1
+16,Placebo,0,1,1,1,Week1
+17,Placebo,0,1,1,1,Week1
+18,Placebo,0,1,1,1,Week1
+19,Placebo,0,1,1,1,Week1
+20,Placebo,0,1,1,1,Week1
+21,Placebo,0,1,1,1,Week1
+22,Placebo,0,1,1,1,Week1
+23,Placebo,0,1,1,1,Week1
+24,Placebo,0,1,1,1,Week1
+25,Placebo,0,1,1,1,Week1
+26,Placebo,0,1,1,1,Week1
+27,Placebo,0,1,1,1,Week1
+28,Placebo,0,1,1,1,Week1
+29,Placebo,0,1,1,1,Week1
+30,Placebo,0,0,1,1,Week2
+31,Placebo,0,0,1,1,Week2
+32,Placebo,0,0,1,1,Week2
+33,Placebo,0,0,1,1,Week2
+34,Placebo,0,0,1,1,Week2
+35,Placebo,0,0,1,1,Week2
+36,Placebo,0,0,1,1,Week2
+37,Placebo,0,0,1,1,Week2
+38,Placebo,0,0,1,1,Week2
+39,Placebo,0,0,1,1,Week2
+40,Placebo,0,0,1,1,Week2
+41,Placebo,0,0,1,1,Week2
+42,Placebo,0,0,1,1,Week2
+43,Placebo,0,0,1,1,Week2
+44,Placebo,0,0,1,1,Week2
+45,Placebo,0,0,1,1,Week2
+46,Placebo,0,0,1,1,Week2
+47,Placebo,0,0,1,1,Week2
+48,Placebo,0,0,1,1,Week2
+49,Placebo,0,0,1,1,Week2
+50,Placebo,0,0,1,1,Week2
+51,Placebo,0,0,0,1,Week4
+52,Placebo,0,0,0,1,Week4
+53,Placebo,0,0,0,1,Week4
+54,Placebo,0,0,0,1,Week4
+55,Placebo,0,0,0,1,Week4
+56,Placebo,0,0,0,1,Week4
+57,Placebo,0,0,0,1,Week4
+58,Placebo,0,0,0,1,Week4
+59,Placebo,0,0,0,1,Week4
+60,Placebo,0,0,0,1,Week4
+61,Placebo,0,0,0,1,Week4
+62,Placebo,0,0,0,1,Week4
+63,Placebo,0,0,0,1,Week4
+64,Placebo,0,0,0,1,Week4
+65,Placebo,0,0,0,1,Week4
+66,Placebo,0,0,0,1,Week4
+67,Placebo,0,0,0,1,Week4
+68,Placebo,0,0,0,1,Week4
+69,Placebo,0,0,0,1,Week4
+70,Placebo,0,0,0,0,Not healed by Week4
+71,Placebo,0,0,0,0,Not healed by Week4
+72,Placebo,0,0,0,0,Not healed by Week4
+73,Placebo,0,0,0,0,Not healed by Week4
+74,Placebo,0,0,0,0,Not healed by Week4
+75,Placebo,0,0,0,0,Not healed by Week4
+76,Placebo,0,0,0,0,Not healed by Week4
+77,Placebo,0,0,0,0,Not healed by Week4
+78,Placebo,0,0,0,0,Not healed by Week4
+79,Placebo,0,0,0,0,Not healed by Week4
+80,Placebo,0,0,0,0,Not healed by Week4
+81,Placebo,0,0,0,0,Not healed by Week4
+82,Placebo,0,0,0,0,Not healed by Week4
+83,Placebo,0,0,0,0,Not healed by Week4
+84,Placebo,0,0,0,0,Not healed by Week4
+85,Placebo,0,0,0,0,Not healed by Week4
+86,Placebo,0,0,0,0,Not healed by Week4
+87,Placebo,0,0,0,0,Not healed by Week4
+88,Placebo,0,0,0,0,Not healed by Week4
+89,Placebo,0,0,0,0,Not healed by Week4
+90,Placebo,0,0,0,0,Not healed by Week4
+91,Placebo,0,0,0,0,Not healed by Week4
+92,Placebo,0,0,0,0,Not healed by Week4
+93,Placebo,0,0,0,0,Not healed by Week4
+94,Placebo,0,0,0,0,Not healed by Week4
+95,Placebo,0,0,0,0,Not healed by Week4
+96,Placebo,0,0,0,0,Not healed by Week4
+97,Placebo,0,0,0,0,Not healed by Week4
+98,Placebo,0,0,0,0,Not healed by Week4
+99,Placebo,0,0,0,0,Not healed by Week4
+100,Placebo,0,0,0,0,Not healed by Week4
+101,Placebo,0,0,0,0,Not healed by Week4
+102,Placebo,0,0,0,0,Not healed by Week4
+103,Placebo,0,0,0,0,Not healed by Week4
+104,Placebo,0,0,0,0,Not healed by Week4
+105,Placebo,0,0,0,0,Not healed by Week4
+106,Placebo,0,0,0,0,Not healed by Week4
+107,Placebo,0,0,0,0,Not healed by Week4
+108,Placebo,0,0,0,0,Not healed by Week4
+109,Placebo,0,0,0,0,Not healed by Week4
+110,Placebo,0,0,0,0,Not healed by Week4
+111,Placebo,0,0,0,0,Not healed by Week4
+112,Placebo,0,0,0,0,Not healed by Week4
+113,Placebo,0,0,0,0,Not healed by Week4
+114,Placebo,0,0,0,0,Not healed by Week4
+115,Placebo,0,0,0,0,Not healed by Week4
+116,Placebo,0,0,0,0,Not healed by Week4
+117,Placebo,0,0,0,0,Not healed by Week4
+118,Placebo,0,0,0,0,Not healed by Week4
+119,Placebo,0,0,0,0,Not healed by Week4
+120,Placebo,0,0,0,0,Not healed by Week4
+121,Placebo,0,0,0,0,Not healed by Week4
+122,Placebo,0,0,0,0,Not healed by Week4
+123,Placebo,0,0,0,0,Not healed by Week4
+124,Placebo,0,0,0,0,Not healed by Week4
+125,Placebo,0,0,0,0,Not healed by Week4
+126,Placebo,0,0,0,0,Not healed by Week4
+127,Placebo,0,0,0,0,Not healed by Week4
+128,Placebo,0,0,0,0,Not healed by Week4
+129,Placebo,0,0,0,0,Not healed by Week4
+130,Placebo,0,0,0,0,Not healed by Week4
+131,Placebo,0,0,0,0,Not healed by Week4
+132,Placebo,0,0,0,0,Not healed by Week4
+133,Placebo,0,0,0,0,Not healed by Week4
+134,Placebo,0,0,0,0,Not healed by Week4
+135,Placebo,0,0,0,0,Not healed by Week4
+136,Placebo,0,0,0,0,Not healed by Week4
+137,Placebo,0,0,0,0,Not healed by Week4
+138,Placebo,0,0,0,0,Not healed by Week4
+139,Placebo,0,0,0,0,Not healed by Week4
+140,Placebo,0,0,0,0,Not healed by Week4
+141,Placebo,0,0,0,0,Not healed by Week4
+142,Placebo,0,0,0,0,Not healed by Week4
+143,Placebo,0,0,0,0,Not healed by Week4
+144,Placebo,0,0,0,0,Not healed by Week4
+145,Placebo,0,0,0,0,Not healed by Week4
+146,Placebo,0,0,0,0,Not healed by Week4
+147,Placebo,0,0,0,0,Not healed by Week4
+148,Placebo,0,0,0,0,Not healed by Week4
+149,Placebo,0,0,0,0,Not healed by Week4
+150,Placebo,0,0,0,0,Not healed by Week4
+151,Placebo,0,0,0,0,Not healed by Week4
+152,Placebo,0,0,0,0,Not healed by Week4
+153,Placebo,0,0,0,0,Not healed by Week4
+154,Placebo,0,0,0,0,Not healed by Week4
+155,Placebo,0,0,0,0,Not healed by Week4
+156,Placebo,0,0,0,0,Not healed by Week4
+157,Placebo,0,0,0,0,Not healed by Week4
+158,Placebo,0,0,0,0,Not healed by Week4
+159,Placebo,0,0,0,0,Not healed by Week4
+160,Placebo,0,0,0,0,Not healed by Week4
+161,Placebo,0,0,0,0,Not healed by Week4
+162,Placebo,0,0,0,0,Not healed by Week4
+163,Placebo,0,0,0,0,Not healed by Week4
+164,Placebo,0,0,0,0,Not healed by Week4
+165,Placebo,0,0,0,0,Not healed by Week4
+166,Placebo,0,0,0,0,Not healed by Week4
+167,Placebo,0,0,0,0,Not healed by Week4
+168,Placebo,0,0,0,0,Not healed by Week4
+169,400mg C,400,1,1,1,Week1
+170,400mg C,400,1,1,1,Week1
+171,400mg C,400,1,1,1,Week1
+172,400mg C,400,1,1,1,Week1
+173,400mg C,400,1,1,1,Week1
+174,400mg C,400,1,1,1,Week1
+175,400mg C,400,1,1,1,Week1
+176,400mg C,400,1,1,1,Week1
+177,400mg C,400,1,1,1,Week1
+178,400mg C,400,1,1,1,Week1
+179,400mg C,400,1,1,1,Week1
+180,400mg C,400,1,1,1,Week1
+181,400mg C,400,1,1,1,Week1
+182,400mg C,400,1,1,1,Week1
+183,400mg C,400,1,1,1,Week1
+184,400mg C,400,1,1,1,Week1
+185,400mg C,400,1,1,1,Week1
+186,400mg C,400,1,1,1,Week1
+187,400mg C,400,1,1,1,Week1
+188,400mg C,400,1,1,1,Week1
+189,400mg C,400,1,1,1,Week1
+190,400mg C,400,1,1,1,Week1
+191,400mg C,400,1,1,1,Week1
+192,400mg C,400,1,1,1,Week1
+193,400mg C,400,1,1,1,Week1
+194,400mg C,400,1,1,1,Week1
+195,400mg C,400,1,1,1,Week1
+196,400mg C,400,1,1,1,Week1
+197,400mg C,400,1,1,1,Week1
+198,400mg C,400,0,1,1,Week2
+199,400mg C,400,0,1,1,Week2
+200,400mg C,400,0,1,1,Week2
+201,400mg C,400,0,1,1,Week2
+202,400mg C,400,0,1,1,Week2
+203,400mg C,400,0,1,1,Week2
+204,400mg C,400,0,1,1,Week2
+205,400mg C,400,0,1,1,Week2
+206,400mg C,400,0,1,1,Week2
+207,400mg C,400,0,1,1,Week2
+208,400mg C,400,0,1,1,Week2
+209,400mg C,400,0,1,1,Week2
+210,400mg C,400,0,1,1,Week2
+211,400mg C,400,0,1,1,Week2
+212,400mg C,400,0,1,1,Week2
+213,400mg C,400,0,1,1,Week2
+214,400mg C,400,0,1,1,Week2
+215,400mg C,400,0,1,1,Week2
+216,400mg C,400,0,1,1,Week2
+217,400mg C,400,0,1,1,Week2
+218,400mg C,400,0,1,1,Week2
+219,400mg C,400,0,1,1,Week2
+220,400mg C,400,0,1,1,Week2
+221,400mg C,400,0,1,1,Week2
+222,400mg C,400,0,1,1,Week2
+223,400mg C,400,0,1,1,Week2
+224,400mg C,400,0,1,1,Week2
+225,400mg C,400,0,1,1,Week2
+226,400mg C,400,0,1,1,Week2
+227,400mg C,400,0,1,1,Week2
+228,400mg C,400,0,1,1,Week2
+229,400mg C,400,0,1,1,Week2
+230,400mg C,400,0,1,1,Week2
+231,400mg C,400,0,1,1,Week2
+232,400mg C,400,0,1,1,Week2
+233,400mg C,400,0,1,1,Week2
+234,400mg C,400,0,1,1,Week2
+235,400mg C,400,0,1,1,Week2
+236,400mg C,400,0,1,1,Week2
+237,400mg C,400,0,1,1,Week2
+238,400mg C,400,0,1,1,Week2
+239,400mg C,400,0,1,1,Week2
+240,400mg C,400,0,1,1,Week2
+241,400mg C,400,0,1,1,Week2
+242,400mg C,400,0,0,1,Week4
+243,400mg C,400,0,0,1,Week4
+244,400mg C,400,0,0,1,Week4
+245,400mg C,400,0,0,1,Week4
+246,400mg C,400,0,0,1,Week4
+247,400mg C,400,0,0,1,Week4
+248,400mg C,400,0,0,1,Week4
+249,400mg C,400,0,0,1,Week4
+250,400mg C,400,0,0,1,Week4
+251,400mg C,400,0,0,1,Week4
+252,400mg C,400,0,0,1,Week4
+253,400mg C,400,0,0,1,Week4
+254,400mg C,400,0,0,1,Week4
+255,400mg C,400,0,0,1,Week4
+256,400mg C,400,0,0,1,Week4
+257,400mg C,400,0,0,1,Week4
+258,400mg C,400,0,0,1,Week4
+259,400mg C,400,0,0,1,Week4
+260,400mg C,400,0,0,1,Week4
+261,400mg C,400,0,0,1,Week4
+262,400mg C,400,0,0,1,Week4
+263,400mg C,400,0,0,1,Week4
+264,400mg C,400,0,0,1,Week4
+265,400mg C,400,0,0,1,Week4
+266,400mg C,400,0,0,1,Week4
+267,400mg C,400,0,0,1,Week4
+268,400mg C,400,0,0,1,Week4
+269,400mg C,400,0,0,1,Week4
+270,400mg C,400,0,0,1,Week4
+271,400mg C,400,0,0,1,Week4
+272,400mg C,400,0,0,1,Week4
+273,400mg C,400,0,0,1,Week4
+274,400mg C,400,0,0,1,Week4
+275,400mg C,400,0,0,1,Week4
+276,400mg C,400,0,0,1,Week4
+277,400mg C,400,0,0,1,Week4
+278,400mg C,400,0,0,1,Week4
+279,400mg C,400,0,0,1,Week4
+280,400mg C,400,0,0,1,Week4
+281,400mg C,400,0,0,1,Week4
+282,400mg C,400,0,0,0,Not healed by Week4
+283,400mg C,400,0,0,0,Not healed by Week4
+284,400mg C,400,0,0,0,Not healed by Week4
+285,400mg C,400,0,0,0,Not healed by Week4
+286,400mg C,400,0,0,0,Not healed by Week4
+287,400mg C,400,0,0,0,Not healed by Week4
+288,400mg C,400,0,0,0,Not healed by Week4
+289,400mg C,400,0,0,0,Not healed by Week4
+290,400mg C,400,0,0,0,Not healed by Week4
+291,400mg C,400,0,0,0,Not healed by Week4
+292,400mg C,400,0,0,0,Not healed by Week4
+293,400mg C,400,0,0,0,Not healed by Week4
+294,400mg C,400,0,0,0,Not healed by Week4
+295,400mg C,400,0,0,0,Not healed by Week4
+296,400mg C,400,0,0,0,Not healed by Week4
+297,400mg C,400,0,0,0,Not healed by Week4
+298,400mg C,400,0,0,0,Not healed by Week4
+299,400mg C,400,0,0,0,Not healed by Week4
+300,400mg C,400,0,0,0,Not healed by Week4
+301,400mg C,400,0,0,0,Not healed by Week4
+302,400mg C,400,0,0,0,Not healed by Week4
+303,400mg C,400,0,0,0,Not healed by Week4
+304,400mg C,400,0,0,0,Not healed by Week4
+305,400mg C,400,0,0,0,Not healed by Week4
+306,400mg C,400,0,0,0,Not healed by Week4
+307,400mg C,400,0,0,0,Not healed by Week4
+308,400mg C,400,0,0,0,Not healed by Week4
+309,400mg C,400,0,0,0,Not healed by Week4
+310,400mg C,400,0,0,0,Not healed by Week4
+311,400mg C,400,0,0,0,Not healed by Week4
+312,400mg C,400,0,0,0,Not healed by Week4
+313,400mg C,400,0,0,0,Not healed by Week4
+314,400mg C,400,0,0,0,Not healed by Week4
+315,400mg C,400,0,0,0,Not healed by Week4
+316,400mg C,400,0,0,0,Not healed by Week4
+317,400mg C,400,0,0,0,Not healed by Week4
+318,400mg C,400,0,0,0,Not healed by Week4
+319,400mg C,400,0,0,0,Not healed by Week4
+320,400mg C,400,0,0,0,Not healed by Week4
+321,400mg C,400,0,0,0,Not healed by Week4
+322,400mg C,400,0,0,0,Not healed by Week4
+323,400mg C,400,0,0,0,Not healed by Week4
+324,400mg C,400,0,0,0,Not healed by Week4
+325,400mg C,400,0,0,0,Not healed by Week4
+326,400mg C,400,0,0,0,Not healed by Week4
+327,400mg C,400,0,0,0,Not healed by Week4
+328,400mg C,400,0,0,0,Not healed by Week4
+329,400mg C,400,0,0,0,Not healed by Week4
+330,400mg C,400,0,0,0,Not healed by Week4
+331,400mg C,400,0,0,0,Not healed by Week4
+332,400mg C,400,0,0,0,Not healed by Week4
+333,400mg C,400,0,0,0,Not healed by Week4
+334,400mg C,400,0,0,0,Not healed by Week4
+335,400mg C,400,0,0,0,Not healed by Week4
+336,400mg C,400,0,0,0,Not healed by Week4
+337,400mg C,400,0,0,0,Not healed by Week4
+338,400mg C,400,0,0,0,Not healed by Week4
+339,400mg C,400,0,0,0,Not healed by Week4
+340,400mg C,400,0,0,0,Not healed by Week4
+341,400mg C,400,0,0,0,Not healed by Week4
+342,400mg C,400,0,0,0,Not healed by Week4
+343,400mg C,400,0,0,0,Not healed by Week4
+344,400mg C,400,0,0,0,Not healed by Week4
+345,400mg C,400,0,0,0,Not healed by Week4
+346,400mg C,400,0,0,0,Not healed by Week4
+347,400mg C,400,0,0,0,Not healed by Week4
+348,400mg C,400,0,0,0,Not healed by Week4
+349,400mg C,400,0,0,0,Not healed by Week4
+350,400mg C,400,0,0,0,Not healed by Week4
+351,800mg C,800,1,1,1,Week1
+352,800mg C,800,1,1,1,Week1
+353,800mg C,800,1,1,1,Week1
+354,800mg C,800,1,1,1,Week1
+355,800mg C,800,1,1,1,Week1
+356,800mg C,800,1,1,1,Week1
+357,800mg C,800,1,1,1,Week1
+358,800mg C,800,1,1,1,Week1
+359,800mg C,800,1,1,1,Week1
+360,800mg C,800,1,1,1,Week1
+361,800mg C,800,1,1,1,Week1
+362,800mg C,800,1,1,1,Week1
+363,800mg C,800,1,1,1,Week1
+364,800mg C,800,1,1,1,Week1
+365,800mg C,800,1,1,1,Week1
+366,800mg C,800,1,1,1,Week1
+367,800mg C,800,1,1,1,Week1
+368,800mg C,800,1,1,1,Week1
+369,800mg C,800,1,1,1,Week1
+370,800mg C,800,1,1,1,Week1
+371,800mg C,800,1,1,1,Week1
+372,800mg C,800,1,1,1,Week1
+373,800mg C,800,1,1,1,Week1
+374,800mg C,800,1,1,1,Week1
+375,800mg C,800,1,1,1,Week1
+376,800mg C,800,0,1,1,Week2
+377,800mg C,800,0,1,1,Week2
+378,800mg C,800,0,1,1,Week2
+379,800mg C,800,0,1,1,Week2
+380,800mg C,800,0,1,1,Week2
+381,800mg C,800,0,1,1,Week2
+382,800mg C,800,0,1,1,Week2
+383,800mg C,800,0,1,1,Week2
+384,800mg C,800,0,1,1,Week2
+385,800mg C,800,0,1,1,Week2
+386,800mg C,800,0,1,1,Week2
+387,800mg C,800,0,1,1,Week2
+388,800mg C,800,0,1,1,Week2
+389,800mg C,800,0,1,1,Week2
+390,800mg C,800,0,1,1,Week2
+391,800mg C,800,0,1,1,Week2
+392,800mg C,800,0,1,1,Week2
+393,800mg C,800,0,1,1,Week2
+394,800mg C,800,0,1,1,Week2
+395,800mg C,800,0,1,1,Week2
+396,800mg C,800,0,1,1,Week2
+397,800mg C,800,0,1,1,Week2
+398,800mg C,800,0,1,1,Week2
+399,800mg C,800,0,1,1,Week2
+400,800mg C,800,0,1,1,Week2
+401,800mg C,800,0,1,1,Week2
+402,800mg C,800,0,1,1,Week2
+403,800mg C,800,0,1,1,Week2
+404,800mg C,800,0,1,1,Week2
+405,800mg C,800,0,1,1,Week2
+406,800mg C,800,0,1,1,Week2
+407,800mg C,800,0,1,1,Week2
+408,800mg C,800,0,1,1,Week2
+409,800mg C,800,0,1,1,Week2
+410,800mg C,800,0,1,1,Week2
+411,800mg C,800,0,1,1,Week2
+412,800mg C,800,0,1,1,Week2
+413,800mg C,800,0,1,1,Week2
+414,800mg C,800,0,1,1,Week2
+415,800mg C,800,0,1,1,Week2
+416,800mg C,800,0,1,1,Week2
+417,800mg C,800,0,1,1,Week2
+418,800mg C,800,0,1,1,Week2
+419,800mg C,800,0,1,1,Week2
+420,800mg C,800,0,0,1,Week4
+421,800mg C,800,0,0,1,Week4
+422,800mg C,800,0,0,1,Week4
+423,800mg C,800,0,0,1,Week4
+424,800mg C,800,0,0,1,Week4
+425,800mg C,800,0,0,1,Week4
+426,800mg C,800,0,0,1,Week4
+427,800mg C,800,0,0,1,Week4
+428,800mg C,800,0,0,1,Week4
+429,800mg C,800,0,0,1,Week4
+430,800mg C,800,0,0,1,Week4
+431,800mg C,800,0,0,1,Week4
+432,800mg C,800,0,0,1,Week4
+433,800mg C,800,0,0,1,Week4
+434,800mg C,800,0,0,1,Week4
+435,800mg C,800,0,0,1,Week4
+436,800mg C,800,0,0,1,Week4
+437,800mg C,800,0,0,1,Week4
+438,800mg C,800,0,0,1,Week4
+439,800mg C,800,0,0,1,Week4
+440,800mg C,800,0,0,1,Week4
+441,800mg C,800,0,0,1,Week4
+442,800mg C,800,0,0,1,Week4
+443,800mg C,800,0,0,1,Week4
+444,800mg C,800,0,0,1,Week4
+445,800mg C,800,0,0,1,Week4
+446,800mg C,800,0,0,1,Week4
+447,800mg C,800,0,0,1,Week4
+448,800mg C,800,0,0,1,Week4
+449,800mg C,800,0,0,1,Week4
+450,800mg C,800,0,0,1,Week4
+451,800mg C,800,0,0,1,Week4
+452,800mg C,800,0,0,1,Week4
+453,800mg C,800,0,0,1,Week4
+454,800mg C,800,0,0,1,Week4
+455,800mg C,800,0,0,1,Week4
+456,800mg C,800,0,0,1,Week4
+457,800mg C,800,0,0,1,Week4
+458,800mg C,800,0,0,1,Week4
+459,800mg C,800,0,0,1,Week4
+460,800mg C,800,0,0,1,Week4
+461,800mg C,800,0,0,1,Week4
+462,800mg C,800,0,0,1,Week4
+463,800mg C,800,0,0,1,Week4
+464,800mg C,800,0,0,1,Week4
+465,800mg C,800,0,0,1,Week4
+466,800mg C,800,0,0,1,Week4
+467,800mg C,800,0,0,1,Week4
+468,800mg C,800,0,0,1,Week4
+469,800mg C,800,0,0,1,Week4
+470,800mg C,800,0,0,1,Week4
+471,800mg C,800,0,0,0,Not healed by Week4
+472,800mg C,800,0,0,0,Not healed by Week4
+473,800mg C,800,0,0,0,Not healed by Week4
+474,800mg C,800,0,0,0,Not healed by Week4
+475,800mg C,800,0,0,0,Not healed by Week4
+476,800mg C,800,0,0,0,Not healed by Week4
+477,800mg C,800,0,0,0,Not healed by Week4
+478,800mg C,800,0,0,0,Not healed by Week4
+479,800mg C,800,0,0,0,Not healed by Week4
+480,800mg C,800,0,0,0,Not healed by Week4
+481,800mg C,800,0,0,0,Not healed by Week4
+482,800mg C,800,0,0,0,Not healed by Week4
+483,800mg C,800,0,0,0,Not healed by Week4
+484,800mg C,800,0,0,0,Not healed by Week4
+485,800mg C,800,0,0,0,Not healed by Week4
+486,800mg C,800,0,0,0,Not healed by Week4
+487,800mg C,800,0,0,0,Not healed by Week4
+488,800mg C,800,0,0,0,Not healed by Week4
+489,800mg C,800,0,0,0,Not healed by Week4
+490,800mg C,800,0,0,0,Not healed by Week4
+491,800mg C,800,0,0,0,Not healed by Week4
+492,800mg C,800,0,0,0,Not healed by Week4
+493,800mg C,800,0,0,0,Not healed by Week4
+494,800mg C,800,0,0,0,Not healed by Week4
+495,800mg C,800,0,0,0,Not healed by Week4
+496,800mg C,800,0,0,0,Not healed by Week4
+497,800mg C,800,0,0,0,Not healed by Week4
+498,800mg C,800,0,0,0,Not healed by Week4
+499,800mg C,800,0,0,0,Not healed by Week4
+500,800mg C,800,0,0,0,Not healed by Week4
+501,800mg C,800,0,0,0,Not healed by Week4
+502,800mg C,800,0,0,0,Not healed by Week4
+503,800mg C,800,0,0,0,Not healed by Week4
+504,800mg C,800,0,0,0,Not healed by Week4
+505,800mg C,800,0,0,0,Not healed by Week4
+506,800mg C,800,0,0,0,Not healed by Week4
+507,800mg C,800,0,0,0,Not healed by Week4
+508,800mg C,800,0,0,0,Not healed by Week4
+509,800mg C,800,0,0,0,Not healed by Week4
+510,800mg C,800,0,0,0,Not healed by Week4
+511,800mg C,800,0,0,0,Not healed by Week4
+512,800mg C,800,0,0,0,Not healed by Week4
+513,800mg C,800,0,0,0,Not healed by Week4
+514,800mg C,800,0,0,0,Not healed by Week4
+515,800mg C,800,0,0,0,Not healed by Week4
+516,1600mg C,1600,1,1,1,Week1
+517,1600mg C,1600,1,1,1,Week1
+518,1600mg C,1600,1,1,1,Week1
+519,1600mg C,1600,1,1,1,Week1
+520,1600mg C,1600,1,1,1,Week1
+521,1600mg C,1600,1,1,1,Week1
+522,1600mg C,1600,1,1,1,Week1
+523,1600mg C,1600,1,1,1,Week1
+524,1600mg C,1600,1,1,1,Week1
+525,1600mg C,1600,1,1,1,Week1
+526,1600mg C,1600,1,1,1,Week1
+527,1600mg C,1600,1,1,1,Week1
+528,1600mg C,1600,1,1,1,Week1
+529,1600mg C,1600,1,1,1,Week1
+530,1600mg C,1600,1,1,1,Week1
+531,1600mg C,1600,1,1,1,Week1
+532,1600mg C,1600,1,1,1,Week1
+533,1600mg C,1600,1,1,1,Week1
+534,1600mg C,1600,1,1,1,Week1
+535,1600mg C,1600,1,1,1,Week1
+536,1600mg C,1600,1,1,1,Week1
+537,1600mg C,1600,1,1,1,Week1
+538,1600mg C,1600,1,1,1,Week1
+539,1600mg C,1600,1,1,1,Week1
+540,1600mg C,1600,1,1,1,Week1
+541,1600mg C,1600,1,1,1,Week1
+542,1600mg C,1600,1,1,1,Week1
+543,1600mg C,1600,1,1,1,Week1
+544,1600mg C,1600,1,1,1,Week1
+545,1600mg C,1600,1,1,1,Week1
+546,1600mg C,1600,1,1,1,Week1
+547,1600mg C,1600,1,1,1,Week1
+548,1600mg C,1600,1,1,1,Week1
+549,1600mg C,1600,1,1,1,Week1
+550,1600mg C,1600,1,1,1,Week1
+551,1600mg C,1600,1,1,1,Week1
+552,1600mg C,1600,1,1,1,Week1
+553,1600mg C,1600,1,1,1,Week1
+554,1600mg C,1600,1,1,1,Week1
+555,1600mg C,1600,0,1,1,Week2
+556,1600mg C,1600,0,1,1,Week2
+557,1600mg C,1600,0,1,1,Week2
+558,1600mg C,1600,0,1,1,Week2
+559,1600mg C,1600,0,1,1,Week2
+560,1600mg C,1600,0,1,1,Week2
+561,1600mg C,1600,0,1,1,Week2
+562,1600mg C,1600,0,1,1,Week2
+563,1600mg C,1600,0,1,1,Week2
+564,1600mg C,1600,0,1,1,Week2
+565,1600mg C,1600,0,1,1,Week2
+566,1600mg C,1600,0,1,1,Week2
+567,1600mg C,1600,0,1,1,Week2
+568,1600mg C,1600,0,1,1,Week2
+569,1600mg C,1600,0,1,1,Week2
+570,1600mg C,1600,0,1,1,Week2
+571,1600mg C,1600,0,1,1,Week2
+572,1600mg C,1600,0,1,1,Week2
+573,1600mg C,1600,0,1,1,Week2
+574,1600mg C,1600,0,1,1,Week2
+575,1600mg C,1600,0,1,1,Week2
+576,1600mg C,1600,0,1,1,Week2
+577,1600mg C,1600,0,1,1,Week2
+578,1600mg C,1600,0,1,1,Week2
+579,1600mg C,1600,0,1,1,Week2
+580,1600mg C,1600,0,1,1,Week2
+581,1600mg C,1600,0,1,1,Week2
+582,1600mg C,1600,0,1,1,Week2
+583,1600mg C,1600,0,1,1,Week2
+584,1600mg C,1600,0,1,1,Week2
+585,1600mg C,1600,0,1,1,Week2
+586,1600mg C,1600,0,1,1,Week2
+587,1600mg C,1600,0,1,1,Week2
+588,1600mg C,1600,0,1,1,Week2
+589,1600mg C,1600,0,1,1,Week2
+590,1600mg C,1600,0,1,1,Week2
+591,1600mg C,1600,0,1,1,Week2
+592,1600mg C,1600,0,1,1,Week2
+593,1600mg C,1600,0,1,1,Week2
+594,1600mg C,1600,0,1,1,Week2
+595,1600mg C,1600,0,1,1,Week2
+596,1600mg C,1600,0,1,1,Week2
+597,1600mg C,1600,0,1,1,Week2
+598,1600mg C,1600,0,1,1,Week2
+599,1600mg C,1600,0,1,1,Week2
+600,1600mg C,1600,0,1,1,Week2
+601,1600mg C,1600,0,1,1,Week2
+602,1600mg C,1600,0,1,1,Week2
+603,1600mg C,1600,0,1,1,Week2
+604,1600mg C,1600,0,1,1,Week2
+605,1600mg C,1600,0,1,1,Week2
+606,1600mg C,1600,0,0,1,Week4
+607,1600mg C,1600,0,0,1,Week4
+608,1600mg C,1600,0,0,1,Week4
+609,1600mg C,1600,0,0,1,Week4
+610,1600mg C,1600,0,0,1,Week4
+611,1600mg C,1600,0,0,1,Week4
+612,1600mg C,1600,0,0,1,Week4
+613,1600mg C,1600,0,0,1,Week4
+614,1600mg C,1600,0,0,1,Week4
+615,1600mg C,1600,0,0,1,Week4
+616,1600mg C,1600,0,0,1,Week4
+617,1600mg C,1600,0,0,1,Week4
+618,1600mg C,1600,0,0,1,Week4
+619,1600mg C,1600,0,0,1,Week4
+620,1600mg C,1600,0,0,1,Week4
+621,1600mg C,1600,0,0,1,Week4
+622,1600mg C,1600,0,0,1,Week4
+623,1600mg C,1600,0,0,1,Week4
+624,1600mg C,1600,0,0,1,Week4
+625,1600mg C,1600,0,0,1,Week4
+626,1600mg C,1600,0,0,1,Week4
+627,1600mg C,1600,0,0,1,Week4
+628,1600mg C,1600,0,0,1,Week4
+629,1600mg C,1600,0,0,1,Week4
+630,1600mg C,1600,0,0,1,Week4
+631,1600mg C,1600,0,0,1,Week4
+632,1600mg C,1600,0,0,1,Week4
+633,1600mg C,1600,0,0,1,Week4
+634,1600mg C,1600,0,0,1,Week4
+635,1600mg C,1600,0,0,1,Week4
+636,1600mg C,1600,0,0,1,Week4
+637,1600mg C,1600,0,0,1,Week4
+638,1600mg C,1600,0,0,1,Week4
+639,1600mg C,1600,0,0,1,Week4
+640,1600mg C,1600,0,0,1,Week4
+641,1600mg C,1600,0,0,1,Week4
+642,1600mg C,1600,0,0,1,Week4
+643,1600mg C,1600,0,0,1,Week4
+644,1600mg C,1600,0,0,1,Week4
+645,1600mg C,1600,0,0,1,Week4
+646,1600mg C,1600,0,0,1,Week4
+647,1600mg C,1600,0,0,1,Week4
+648,1600mg C,1600,0,0,1,Week4
+649,1600mg C,1600,0,0,1,Week4
+650,1600mg C,1600,0,0,1,Week4
+651,1600mg C,1600,0,0,1,Week4
+652,1600mg C,1600,0,0,1,Week4
+653,1600mg C,1600,0,0,1,Week4
+654,1600mg C,1600,0,0,1,Week4
+655,1600mg C,1600,0,0,1,Week4
+656,1600mg C,1600,0,0,1,Week4
+657,1600mg C,1600,0,0,1,Week4
+658,1600mg C,1600,0,0,1,Week4
+659,1600mg C,1600,0,0,1,Week4
+660,1600mg C,1600,0,0,1,Week4
+661,1600mg C,1600,0,0,0,Not healed by Week4
+662,1600mg C,1600,0,0,0,Not healed by Week4
+663,1600mg C,1600,0,0,0,Not healed by Week4
+664,1600mg C,1600,0,0,0,Not healed by Week4
+665,1600mg C,1600,0,0,0,Not healed by Week4
+666,1600mg C,1600,0,0,0,Not healed by Week4
+667,1600mg C,1600,0,0,0,Not healed by Week4
+668,1600mg C,1600,0,0,0,Not healed by Week4
+669,1600mg C,1600,0,0,0,Not healed by Week4
+670,1600mg C,1600,0,0,0,Not healed by Week4
+671,1600mg C,1600,0,0,0,Not healed by Week4
+672,1600mg C,1600,0,0,0,Not healed by Week4
+673,1600mg C,1600,0,0,0,Not healed by Week4
+674,1600mg C,1600,0,0,0,Not healed by Week4
+675,1600mg C,1600,0,0,0,Not healed by Week4
+676,1600mg C,1600,0,0,0,Not healed by Week4
+677,1600mg C,1600,0,0,0,Not healed by Week4
+678,1600mg C,1600,0,0,0,Not healed by Week4
+679,1600mg C,1600,0,0,0,Not healed by Week4
+680,1600mg C,1600,0,0,0,Not healed by Week4
+681,1600mg C,1600,0,0,0,Not healed by Week4
+682,1600mg C,1600,0,0,0,Not healed by Week4
+683,1600mg C,1600,0,0,0,Not healed by Week4
+684,1600mg C,1600,0,0,0,Not healed by Week4
+685,1600mg C,1600,0,0,0,Not healed by Week4
+686,1600mg C,1600,0,0,0,Not healed by Week4
+687,1600mg C,1600,0,0,0,Not healed by Week4
+688,1600mg C,1600,0,0,0,Not healed by Week4
+689,1600mg C,1600,0,0,0,Not healed by Week4
+690,1600mg C,1600,0,0,0,Not healed by Week4
+691,1600mg C,1600,0,0,0,Not healed by Week4
+692,1600mg C,1600,0,0,0,Not healed by Week4
+693,1600mg C,1600,0,0,0,Not healed by Week4
+694,1600mg C,1600,0,0,0,Not healed by Week4
+695,1600mg C,1600,0,0,0,Not healed by Week4
+696,1600mg C,1600,0,0,0,Not healed by Week4
+697,1600mg C,1600,0,0,0,Not healed by Week4
+698,1600mg C,1600,0,0,0,Not healed by Week4
+699,1600mg C,1600,0,0,0,Not healed by Week4
+700,1600mg C,1600,0,0,0,Not healed by Week4
+701,1600mg C,1600,0,0,0,Not healed by Week4
+702,1600mg C,1600,0,0,0,Not healed by Week4
+703,1600mg C,1600,0,0,0,Not healed by Week4
