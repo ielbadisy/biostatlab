@@ -28,9 +28,8 @@ utils::globalVariables("biostatlab_registry")
 #'   \item{Sex}{Recorded sex.}
 #' }
 #' @source Peace and Chen (2010), *Clinical Trial Data Analysis Using R*, Table
-#'   3.1. Reconstructed source files:
-#'   `data-raw/clinical-trial-data/diastolic_blood_pressure_trial.csv` and
-#'   `data-raw/clinical-trial-data/dpb-dict.md`.
+#'   3.1. The package data object was reconstructed from local development
+#'   source files retained outside the remote package source.
 "dpb"
 
 #' Duodenal Ulcer Healing Trial
@@ -50,9 +49,8 @@ utils::globalVariables("biostatlab_registry")
 #'   \item{Healing_Time}{First observed healing time category.}
 #' }
 #' @source Peace and Chen (2010), *Clinical Trial Data Analysis Using R*, Table
-#'   3.2. Reconstructed source files:
-#'   `data-raw/clinical-trial-data/duodenal_ulcer_trial_raw_reconstructed.csv`
-#'   and `data-raw/clinical-trial-data/duodenal-dict.md`.
+#'   3.2. The package data object was reconstructed from local development
+#'   source files retained outside the remote package source.
 "duodenal"
 
 #' Streptomycin Tuberculosis Trial

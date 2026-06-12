@@ -20,9 +20,8 @@ A data frame with 40 rows and 9 variables:
 }
 \source{
 Peace and Chen (2010), \emph{Clinical Trial Data Analysis Using R}, Table
-3.1. Reconstructed source files:
-\code{data-raw/clinical-trial-data/diastolic_blood_pressure_trial.csv} and
-\code{data-raw/clinical-trial-data/dpb-dict.md}.
+3.1. The package data object was reconstructed from local development
+source files retained outside the remote package source.
 }
 \usage{
 dpb
