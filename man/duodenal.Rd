@@ -18,9 +18,8 @@ A data frame with 703 rows and 7 variables:
 }
 \source{
 Peace and Chen (2010), \emph{Clinical Trial Data Analysis Using R}, Table
-3.2. Reconstructed source files:
-\code{data-raw/clinical-trial-data/duodenal_ulcer_trial_raw_reconstructed.csv}
-and \code{data-raw/clinical-trial-data/duodenal-dict.md}.
+3.2. The package data object was reconstructed from local development
+source files retained outside the remote package source.
 }
 \usage{
 duodenal

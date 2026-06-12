@@ -4,3 +4,10 @@
 *.tar.gz
 *.Rcheck/
 raw-selected-datasets/
+data-raw/clinical-trial-data/
+biostatlab-package/
+clinial-datasets.R
+diastolic_blood_pressure_trial.csv
+duodenal_ulcer_trial_raw_reconstructed.csv
+dpb-dict.md
+duodenal-dict.md
