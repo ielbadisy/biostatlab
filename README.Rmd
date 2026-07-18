@@ -46,6 +46,19 @@ rmarkdown::draft(
 
 This template keeps the layout stable and applies a light, elegant visual style.
 
+Create a PDF tutorial with:
+
+```r
+rmarkdown::draft(
+  "my-tutorial-pdf.Rmd",
+  template = "biostatlab_tutorial_pdf",
+  package = "biostatlab",
+  create_dir = TRUE
+)
+```
+
+The PDF tutorial keeps the same skeleton and uses a clean, readable LaTeX layout.
+
 Create a beamer slide deck with:
 
 ```r
