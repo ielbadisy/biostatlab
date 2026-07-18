@@ -19,6 +19,35 @@ heart_failure <- load_dataset("heart_failure")
 Each dataset has a documentation page with dimensions, task type, target
 columns, and references when available.
 
+
+## Tutorial Template
+
+Create a new tutorial from the package template:
+
+```r
+rmarkdown::draft(
+  "my-tutorial.Rmd",
+  template = "biostatlab_tutorial",
+  package = "biostatlab",
+  create_dir = TRUE
+)
+```
+
+This template keeps the layout stable and applies a light, elegant visual style.
+
+Create a beamer slide deck with:
+
+```r
+rmarkdown::draft(
+  "slides.Rmd",
+  template = "biostatlab_beamer",
+  package = "biostatlab",
+  create_dir = TRUE
+)
+```
+
+The beamer template keeps the native look, widens the content area, and switches bullet markers to circles.
+
 ## Available Datasets
 
 | Dataset                       | Task           | Outcome                                           | Predictors  | Source                                                                                                                     | Title                                          |
