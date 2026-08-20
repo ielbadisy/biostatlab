@@ -1,13 +1,12 @@
-root <- normalizePath(file.path("raw-selected-datasets"), mustWork = FALSE)
-clinical_root <- normalizePath(file.path("data-raw", "clinical-trial-data"), mustWork = FALSE)
+root <- normalizePath(file.path("raw-selected-datasets"), mustWork = TRUE)
 
 entry <- function(name, file, title, task, target, reference,
                   time = NA_character_, event = NA_character_,
                   notes = NA_character_, header = TRUE,
-                  col_names = NULL, reader = NULL) {
+                  col_names = NULL) {
   list(
     name = name,
-    file = if (is.null(reader)) file.path(root, file) else file,
+    file = file.path(root, file),
     title = title,
     task = task,
     target = target,
@@ -16,101 +15,8 @@ entry <- function(name, file, title, task, target, reference,
     reference = reference,
     notes = notes,
     header = header,
-    col_names = col_names,
-    reader = reader
+    col_names = col_names
   )
-}
-
-clinical_entry <- function(name, file, title, task, target, reference,
-                           notes = NA_character_) {
-  entry(
-    name, file, title, task, target, reference, notes = notes,
-    reader = function(x) {
-      clinical_file <- file.path(clinical_root, x$file)
-      if (!file.exists(clinical_file)) {
-        rda <- file.path("data", paste0(x$name, ".rda"))
-        if (file.exists(rda)) {
-          e <- new.env(parent = emptyenv())
-          load(rda, envir = e)
-          return(get(x$name, envir = e, inherits = FALSE))
-        }
-      }
-      read.csv(
-        clinical_file,
-        check.names = FALSE,
-        stringsAsFactors = FALSE
-      )
-    }
-  )
-}
-
-package_entry <- function(name, package, object, title, task, target, reference,
-                          notes = NA_character_) {
-  entry(
-    name, file.path("package", package, object), title, task, target, reference,
-    notes = notes,
-    reader = function(x) {
-      e <- new.env(parent = emptyenv())
-      data(list = object, package = package, envir = e)
-      as.data.frame(get(object, envir = e, inherits = FALSE))
-    }
-  )
-}
-
-simulated_cardio <- function(seed = 20260612L, n = 180L) {
-  set.seed(seed)
-
-  cardio <- data.frame(
-    id = seq_len(n),
-    sex = sample(c("Female", "Male"), n, replace = TRUE),
-    treatment = sample(c("Control", "DrugA", "DrugB"), n, replace = TRUE),
-    smoker = sample(c("No", "Yes"), n, replace = TRUE, prob = c(0.65, 0.35)),
-    diabetes = sample(c("No", "Yes"), n, replace = TRUE, prob = c(0.75, 0.25)),
-    age = round(rnorm(n, mean = 55, sd = 10), 1),
-    stringsAsFactors = FALSE
-  )
-
-  cardio$sbp_baseline <- round(rnorm(n, mean = 145, sd = 15), 1)
-  cardio$treatment_effect <- ifelse(
-    cardio$treatment == "Control", 2,
-    ifelse(cardio$treatment == "DrugA", -7, -12)
-  )
-  cardio$sbp_3m <- round(
-    cardio$sbp_baseline + cardio$treatment_effect + rnorm(n, mean = 0, sd = 10),
-    1
-  )
-  cardio$sbp_6m <- round(cardio$sbp_3m + rnorm(n, mean = -2, sd = 8), 1)
-  cardio$ldl <- round(
-    rnorm(n, mean = 130, sd = 30) + ifelse(cardio$diabetes == "Yes", 12, 0),
-    1
-  )
-  cardio$crp <- round(rlnorm(n, meanlog = 1.5, sdlog = 0.6), 2)
-  cardio$adherence <- sample(
-    c("Low", "Moderate", "High"),
-    n,
-    replace = TRUE,
-    prob = c(0.25, 0.45, 0.30)
-  )
-  cardio$response <- ifelse(cardio$sbp_3m < 140, "Controlled", "Uncontrolled")
-  cardio$controlled_baseline <- ifelse(
-    cardio$sbp_baseline < 140,
-    "Controlled",
-    "Uncontrolled"
-  )
-  cardio$controlled_3m <- ifelse(cardio$sbp_3m < 140, "Controlled", "Uncontrolled")
-  cardio$controlled_6m <- ifelse(cardio$sbp_6m < 140, "Controlled", "Uncontrolled")
-
-  cardio$sex <- factor(cardio$sex)
-  cardio$treatment <- factor(cardio$treatment)
-  cardio$smoker <- factor(cardio$smoker)
-  cardio$diabetes <- factor(cardio$diabetes)
-  cardio$adherence <- factor(cardio$adherence, levels = c("Low", "Moderate", "High"))
-  cardio$response <- factor(cardio$response)
-  cardio$controlled_baseline <- factor(cardio$controlled_baseline)
-  cardio$controlled_3m <- factor(cardio$controlled_3m)
-  cardio$controlled_6m <- factor(cardio$controlled_6m)
-
-  cardio
 }
 
 entries <- list(
@@ -231,58 +137,10 @@ entries <- list(
     "regression", "age_first_cig",
     "Global Youth Tobacco Survey Morocco materials and tobacco-use manuscripts included with the raw-selected-datasets sources.",
     notes = "Regression task for age at first cigarette among survey respondents."
-  ),
-  clinical_entry(
-    "dpb", "diastolic_blood_pressure_trial.csv", "Diastolic blood pressure trial",
-    "classification", "TRT",
-    "Peace and Chen (2010), Clinical Trial Data Analysis Using R, Table 3.1; reconstructed CSV in data-raw/clinical-trial-data.",
-    notes = "Small hypertension clinical trial with treatment assignment, baseline DBP, repeated monthly DBP measurements, age, and sex."
-  ),
-  clinical_entry(
-    "duodenal", "duodenal_ulcer_trial_raw_reconstructed.csv", "Duodenal ulcer healing trial",
-    "classification", "Healed_Week4",
-    "Peace and Chen (2010), Clinical Trial Data Analysis Using R, Table 3.2; reconstructed CSV in data-raw/clinical-trial-data.",
-    notes = "Reconstructed subject-level cimetidine dose comparison trial with ulcer healing indicators at weeks 1, 2, and 4."
-  ),
-  package_entry(
-    "streptb", "medicaldata", "strep_tb", "Streptomycin tuberculosis trial",
-    "classification", "improved",
-    "Streptomycin in Tuberculosis Trials Committee (1948), British Medical Journal; redistributed as medicaldata::strep_tb.",
-    notes = "Randomized streptomycin tuberculosis trial with six-month radiologic improvement outcome."
-  ),
-  package_entry(
-    "respiratory", "HSAUR3", "respiratory", "Respiratory illness trial",
-    "classification", "status",
-    "Davis (1991), Statistics in Medicine 10:1959-1980; redistributed as HSAUR3::respiratory.",
-    notes = "Long-form multicenter respiratory trial with repeated monthly respiratory status."
-  ),
-  package_entry(
-    "epilepsy", "HSAUR2", "epilepsy", "Epilepsy progabide trial",
-    "regression", "seizure.rate",
-    "Thall and Vail (1990), Biometrics 46:657-671; redistributed as HSAUR2::epilepsy.",
-    notes = "Longitudinal randomized epilepsy trial with seizure counts by treatment period."
-  ),
-  entry(
-    "cardio", "simulated/cardio", "Simulated cardiovascular teaching dataset",
-    "classification", "response",
-    "Simulated by the biostatlab package for teaching purposes; generated in data-raw/prepare_datasets.R with seed 20260612.",
-    notes = "Simulated cardiovascular clinical teaching dataset with blood pressure, LDL, CRP, adherence, and controlled-status outcomes.",
-    reader = function(x) simulated_cardio()
   )
 )
 
 read_entry <- function(x) {
-  if (!is.null(x$reader)) {
-    return(x$reader(x))
-  }
-  if (!file.exists(x$file)) {
-    rda <- file.path("data", paste0(x$name, ".rda"))
-    if (file.exists(rda)) {
-      e <- new.env(parent = emptyenv())
-      load(rda, envir = e)
-      return(get(x$name, envir = e, inherits = FALSE))
-    }
-  }
   data <- read.csv(
     x$file,
     header = x$header,
@@ -324,16 +182,6 @@ registry <- data.frame(
   stringsAsFactors = FALSE
 )
 
-registry$source_path <- ifelse(
-  startsWith(vapply(entries, `[[`, character(1), "file"), "package/"),
-  vapply(entries, `[[`, character(1), "file"),
-  ifelse(
-    file.exists(file.path(clinical_root, vapply(entries, `[[`, character(1), "file"))),
-    file.path("data-raw/clinical-trial-data", vapply(entries, `[[`, character(1), "file")),
-    registry$source_path
-  )
-)
-
 unique_data_files <- entries[!duplicated(vapply(entries, `[[`, character(1), "name"))]
 objects <- character()
 
@@ -348,3 +196,50 @@ for (x in unique_data_files) {
 
 biostatlab_registry <- registry
 save(biostatlab_registry, file = file.path("data", "biostatlab_registry.rda"), compress = "xz")
+
+escape_rd <- function(x) {
+  x <- gsub("\\\\", "\\\\\\\\", x)
+  x <- gsub("%", "\\\\%", x)
+  x
+}
+
+for (x in entries) {
+  rd <- c(
+    paste0("\\name{", x$name, "}"),
+    paste0("\\alias{", x$name, "}"),
+    paste0("\\docType{data}"),
+    paste0("\\title{", escape_rd(x$title), "}"),
+    "\\description{",
+    paste0(escape_rd(x$notes), " Task type: ", x$task, "."),
+    "}",
+    "\\usage{",
+    paste0("data(", x$name, ")"),
+    "}",
+    "\\format{",
+    paste0("A data frame with ", registry$n_rows[registry$name == x$name][1], " rows and ",
+           registry$n_columns[registry$name == x$name][1], " columns."),
+    "}",
+    "\\details{",
+    paste0("Outcome column(s): \\code{", escape_rd(registry$target[registry$name == x$name][1]), "}."),
+    if (!is.na(x$time)) paste0(" Time column: \\code{", escape_rd(x$time), "}.") else "",
+    if (!is.na(x$event)) paste0(" Event column: \\code{", escape_rd(x$event), "}.") else "",
+    "}",
+    "\\source{",
+    paste0("\\code{", escape_rd(registry$source_path[registry$name == x$name][1]), "}. ",
+           escape_rd(x$reference)),
+    "}",
+    "\\keyword{datasets}"
+  )
+  writeLines(rd, file.path("man", paste0(x$name, ".Rd")))
+}
+
+writeLines(c(
+  "\\name{biostatlab_registry}",
+  "\\alias{biostatlab_registry}",
+  "\\docType{data}",
+  "\\title{biostatlab Dataset Registry}",
+  "\\description{Registry of packaged datasets and benchmark task metadata.}",
+  "\\usage{data(biostatlab_registry)}",
+  "\\format{A data frame with one row per benchmark task entry.}",
+  "\\keyword{datasets}"
+), file.path("man", "biostatlab_registry.Rd"))

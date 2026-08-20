@@ -19,48 +19,6 @@ heart_failure <- load_dataset("heart_failure")
 Each dataset has a documentation page with dimensions, task type, target
 columns, and references when available.
 
-
-## Tutorial Template
-
-Create a new tutorial from the package template:
-
-```r
-rmarkdown::draft(
-  "my-tutorial.Rmd",
-  template = "biostatlab_tutorial",
-  package = "biostatlab",
-  create_dir = TRUE
-)
-```
-
-This template keeps the layout stable and applies a light, elegant visual style.
-
-Create a PDF tutorial with:
-
-```r
-rmarkdown::draft(
-  "my-tutorial-pdf.Rmd",
-  template = "biostatlab_tutorial_pdf",
-  package = "biostatlab",
-  create_dir = TRUE
-)
-```
-
-The PDF tutorial keeps the same skeleton and uses a clean, readable LaTeX layout.
-
-Create a beamer slide deck with:
-
-```r
-rmarkdown::draft(
-  "slides.Rmd",
-  template = "biostatlab_beamer",
-  package = "biostatlab",
-  create_dir = TRUE
-)
-```
-
-The beamer template keeps the native look, widens the content area, and switches bullet markers to circles.
-
 ## Available Datasets
 
 | Dataset                       | Task           | Outcome                                           | Predictors  | Source                                                                                                                     | Title                                          |
@@ -83,9 +41,3 @@ The beamer template keeps the native look, widens the content area, and switches
 | `tobacco_morocco`             | classification | `cigar_use`                                       | 26 columns  | Global Youth Tobacco Survey Morocco materials and tobacco-use manuscripts included with the raw-selected-datasets sources. | Morocco youth tobacco survey extract           |
 | `crc_fes_delay`               | regression     | `Delay`                                           | 18 columns  | Scientific Reports article 51304 (2024), PDF included with the raw-selected-datasets sources.                              | Colorectal cancer diagnosis delay from Fez     |
 | `tobacco_age_first_cigarette` | regression     | `age_first_cig`                                   | 26 columns  | Global Youth Tobacco Survey Morocco materials and tobacco-use manuscripts included with the raw-selected-datasets sources. | Age at first cigarette in Morocco youth survey |
-| `dpb`                         | classification | `TRT`                                             | 8 columns   | Peace and Chen (2010), Clinical Trial Data Analysis Using R, Table 3.1; reconstructed CSV in data-raw/clinical-trial-data. | Diastolic blood pressure trial                 |
-| `duodenal`                    | classification | `Healed_Week4`                                    | 6 columns   | Peace and Chen (2010), Clinical Trial Data Analysis Using R, Table 3.2; reconstructed CSV in data-raw/clinical-trial-data. | Duodenal ulcer healing trial                   |
-| `streptb`                     | classification | `improved`                                        | 12 columns  | Streptomycin in Tuberculosis Trials Committee (1948), British Medical Journal; redistributed as medicaldata::strep_tb.     | Streptomycin tuberculosis trial                |
-| `respiratory`                 | classification | `status`                                          | 6 columns   | Davis (1991), Statistics in Medicine 10:1959-1980; redistributed as HSAUR3::respiratory.                                   | Respiratory illness trial                      |
-| `epilepsy`                    | regression     | `seizure.rate`                                    | 5 columns   | Thall and Vail (1990), Biometrics 46:657-671; redistributed as HSAUR2::epilepsy.                                           | Epilepsy progabide trial                       |
-| `cardio`                      | classification | `response`                                        | 16 columns  | Simulated by the biostatlab package for teaching purposes; generated in data-raw/prepare_datasets.R with seed 20260612.    | Simulated cardiovascular teaching dataset      |
